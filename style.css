@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
   }
   
   header {
@@ -17,6 +18,9 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    position: sticky; /* Makes the navbar sticky */
+    top: 0;
+    z-index: 1000;
   }
   
   nav ul li {
@@ -36,6 +40,11 @@ body {
   }
   
   section {
-    padding: 1em;
+    padding: 2em;
+    height: 100vh; /* Gives sections full viewport height */
+    border-bottom: 1px solid #ddd;
   }
+  
+  section#home {
+    background-color: #f9f9f9
   
