@@ -1,48 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-li {
-  float: left;
-  border-right: 1px solid #bbb;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
-}
-
-.active {
-    background-color: #04AA6D;
-  }
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="contact.html">Contact</a></li>
-</ul>
-
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to Our Website</h1>
+            <p>This is the home section.</p>
+        </section>
+        <section id="about">
+            <h1>About Us</h1>
+            <p>This is the about section.</p>
+        </section>
+        <section id="services">
+            <h1>Our Services</h1>
+            <p>This is the services section.</p>
+        </section>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <p>This is the contact section.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
 </body>
 </html>

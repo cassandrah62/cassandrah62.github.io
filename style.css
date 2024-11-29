@@ -1,43 +1,54 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1em;
-    text-align: center;
-  }
+/* General Reset */
+body, h1, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  font-family: Arial, sans-serif;
+}
 
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  nav ul li {
-    float: left;
-  }
-  
-  nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  nav ul li a:hover {
-    background-color: #111;
-  }
-  
-  main {
-    padding: 1em;
-    text-align: center;
-  }
-  
+/* Layout */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Sections */
+main {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+section {
+  margin: 50px
